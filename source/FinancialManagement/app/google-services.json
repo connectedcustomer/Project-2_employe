@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "107556654625",
+    "firebase_url": "https://finacialmanagement-id.firebaseio.com",
+    "project_id": "finacialmanagement-id",
+    "storage_bucket": "finacialmanagement-id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107556654625:android:f296a443d822cc9d",
+        "android_client_info": {
+          "package_name": "com.example.financialmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107556654625-p97k5ubnqteaj43ulnsb3fci81lflrq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGsruSyjOvfhCEmw7oz60jyyBIgPuE_XY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107556654625-p97k5ubnqteaj43ulnsb3fci81lflrq7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

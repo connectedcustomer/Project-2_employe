@@ -31,17 +31,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        callbackManager = CallbackManager.Factory.create();
+
+        /*callbackManager = CallbackManager.Factory.create();
         mainActivity = this;
-        btn_loginFB = findViewById(R.id.btn_login);
+        //btn_loginFB = findViewById(R.id.btn_login);
         btn_loginFB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loginFacebook();
-            }
-        });
-        txtStatus = findViewById(R.id.txtStatus);
-        LoginManager.getInstance().registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+               // loginFacebook();
+            }*/
+        //});
+        //txtStatus = findViewById(R.id.txtStatus);
+       /* LoginManager.getInstance().registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
 
@@ -71,10 +72,10 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
+*/
     }
 
-    @Override
+    /*@Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         callbackManager.onActivityResult(requestCode, resultCode, data);
         super.onActivityResult(requestCode, resultCode, data);
@@ -82,6 +83,6 @@ public class MainActivity extends AppCompatActivity {
     private void loginFacebook(){
         LoginManager.getInstance().logInWithReadPermissions(this,
                 Arrays.asList("public_profile", "email"));
-    }
+    }*/
 
 }
