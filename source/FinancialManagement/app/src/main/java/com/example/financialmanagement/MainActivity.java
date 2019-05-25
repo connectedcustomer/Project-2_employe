@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.moneyjarsetting_view);
+        //setContentView(R.layout.moneyjarsetting_view);
+        setContentView(R.layout.functionmenu_view);
 
         /*callbackManager = CallbackManager.Factory.create();
         mainActivity = this;
