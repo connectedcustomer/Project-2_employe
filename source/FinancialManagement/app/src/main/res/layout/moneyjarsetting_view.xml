@@ -1,11 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/colorWhite">
-<ImageView
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:src="@drawable/"/>
+    android:background="@color/colorWhite">
 
-</RelativeLayout>
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="266dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/background"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/line_settingjar"
+        android:layout_width="156dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background"
+        app:srcCompat="@drawable/line"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/line_settingjar_2"
+        android:layout_width="156dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/line_settingjar"
+        app:layout_constraintTop_toTopOf="@+id/line_settingjar"
+        app:srcCompat="@drawable/line"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/line_settingjar_3"
+        android:layout_width="156dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/line_settingjar"
+        app:layout_constraintTop_toBottomOf="@+id/line_settingjar"
+        app:srcCompat="@drawable/line"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/line_settingjar_4"
+        android:layout_width="156dp"
+        android:layout_height="81dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/line_settingjar_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/line_settingjar_2"
+        app:layout_constraintTop_toTopOf="@+id/line_settingjar_3"
+        app:srcCompat="@drawable/line"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/line_settingjar_5"
+        android:layout_width="156dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/line_settingjar_3"
+        app:layout_constraintTop_toBottomOf="@+id/line_settingjar_3"
+        app:srcCompat="@drawable/line"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/line_settingjar_6"
+        android:layout_width="156dp"
+        android:layout_height="81dp"
+        app:layout_constraintEnd_toEndOf="@+id/line_settingjar_4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/line_settingjar_4"
+        app:layout_constraintTop_toTopOf="@+id/line_settingjar_5"
+        app:srcCompat="@drawable/line"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/shaperectangel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/shape_top"
+        android:scaleType="fitStart"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/josefinsans_regular"
+        android:text="Thiết lập các hũ"
+        android:textColor="@color/colorWhite"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shaperectangel_top"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/shape_bottom_opacity"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="631dp" />
+
+</android.support.constraint.ConstraintLayout>
