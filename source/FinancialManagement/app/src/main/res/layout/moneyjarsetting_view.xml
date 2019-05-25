@@ -105,14 +105,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/shaperectangel_top"
         tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scaleType="fitEnd"
+        android:layout_width="184dp"
+        android:layout_height="112dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/shape_bottom_opacity"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="631dp" />
+        tools:layout_editor_absoluteY="645dp" />
 
 </android.support.constraint.ConstraintLayout>
