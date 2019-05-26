@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <ImageButton
+        android:id="@+id/btn_plan_menu"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#00000000"
+        android:cropToPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_terminalexchange_menu"
+        app:srcCompat="@drawable/ic_menu" />
+
+    <ImageView
+        android:id="@+id/img_plan_menu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_plan_menu"
+        app:layout_constraintStart_toStartOf="@+id/btn_plan_menu"
+        app:layout_constraintTop_toTopOf="@+id/btn_plan_menu"
+        app:srcCompat="@drawable/ic_exchange_recently" />
+
+    <TextView
+        android:id="@+id/txt_plan_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Lập kế hoạch"
+        android:textColor="#110202"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/img_plan_menu"
+        app:layout_constraintTop_toTopOf="@+id/btn_plan_menu" />
+
+    <ImageView
+        android:id="@+id/background_functionmenu"
+        android:layout_width="match_parent"
+        android:layout_height="266dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/background"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/shaperectangel_top_functionmenu"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_functionmenu"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/shape_top"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/josefinsans_regular"
+        android:text="Thêm"
+        android:textColor="@color/colorWhite"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shaperectangel_top_functionmenu"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="420dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_menu_bottom" />
+
+    <ImageButton
+        android:id="@+id/btn_home_menu"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorWhite"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.619"
+        app:srcCompat="@drawable/ic_homepage_3" />
+
+    <ImageButton
+        android:id="@+id/btn_history_menu"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorWhite"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_home_menu"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.642"
+        app:srcCompat="@drawable/ic_recently_3" />
+
+    <ImageButton
+        android:id="@+id/btn_burger_menu"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorWhite"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.642"
+        app:srcCompat="@drawable/ic_menu_burger_3" />
+
+    <ImageButton
+        android:id="@+id/btn_report_menu"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorWhite"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_burger_menu"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toEndOf="@+id/btn_history_menu"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.781"
+        app:srcCompat="@drawable/ic_report_3" />
+
+    <ImageButton
+        android:id="@+id/btn_exchange_menu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="30dp"
+        android:adjustViewBounds="false"
+        android:background="#00000000"
+        android:cropToPadding="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_exchange" />
+
+    <ImageButton
+        android:id="@+id/img_avater_menu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shaperectangel_top_functionmenu"
+        app:srcCompat="@drawable/com_facebook_profile_picture_blank_portrait" />
+
+    <TextView
+        android:id="@+id/txt_username_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/josefinsans_regular"
+        android:text="User name"
+        android:textColor="#100202"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toEndOf="@+id/img_avater_menu"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <ImageButton
+        android:id="@+id/btn_question_menu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="#00003700"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_question" />
+
+    <ImageButton
+        android:id="@+id/btn_jarsetting_menu"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:background="#00000000"
+        android:cropToPadding="true"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_username_menu"
+        app:srcCompat="@drawable/ic_shape_exchangemenu" />
+
+    <ImageButton
+        android:id="@+id/btn_terminalexchange_menu"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#00000000"
+        android:cropToPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_jarsetting_menu"
+        app:srcCompat="@drawable/ic_menu" />
+
+    <ImageView
+        android:id="@+id/img_terminalexchange_menu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_terminalexchange_menu"
+        app:layout_constraintStart_toStartOf="@+id/btn_terminalexchange_menu"
+        app:layout_constraintTop_toTopOf="@+id/btn_terminalexchange_menu"
+        app:srcCompat="@drawable/ic_money_menu" />
+
+    <TextView
+        android:id="@+id/txt_terminalexchange_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Giao dịch định kỳ"
+        android:textColor="#110202"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/img_terminalexchange_menu"
+        app:layout_constraintTop_toTopOf="@+id/btn_terminalexchange_menu" />
+
+    <ImageButton
+        android:id="@+id/btn_help_menu"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#00000000"
+        android:cropToPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_plan_menu"
+        app:srcCompat="@drawable/ic_bottom_shape_add" />
+
+    <TextView
+        android:id="@+id/txt_help_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Hướng dẫn"
+        android:textColor="#110202"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/img_help_menu"
+        app:layout_constraintTop_toTopOf="@+id/btn_help_menu" />
+
+    <ImageView
+        android:id="@+id/img_help_menu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_help_menu"
+        app:layout_constraintStart_toStartOf="@+id/btn_help_menu"
+        app:layout_constraintTop_toTopOf="@+id/btn_help_menu"
+        app:srcCompat="@drawable/ic_exchange_recently" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_plan_menu"
+        app:layout_constraintEnd_toEndOf="@+id/btn_plan_menu"
+        app:layout_constraintTop_toBottomOf="@+id/btn_terminalexchange_menu"
+        app:srcCompat="@drawable/ic_muiten_right" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_help_menu"
+        app:layout_constraintEnd_toEndOf="@+id/btn_help_menu"
+        app:layout_constraintTop_toTopOf="@+id/btn_help_menu"
+        app:srcCompat="@drawable/ic_muiten_right" />
+
+    <ImageView
+        android:id="@+id/img_jarsetting_menu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_jarsetting_menu"
+        app:layout_constraintStart_toStartOf="@+id/btn_jarsetting_menu"
+        app:layout_constraintTop_toTopOf="@+id/btn_jarsetting_menu"
+        app:srcCompat="@drawable/ic_jar_menu" />
+
+    <TextView
+        android:id="@+id/txt_jarsetting_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="8dp"
+        android:text="Thiết lập các hủ"
+        android:textColor="#110202"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_jarsetting_menu"
+        app:layout_constraintEnd_toEndOf="@+id/btn_jarsetting_menu"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toEndOf="@+id/img_jarsetting_menu"
+        app:layout_constraintTop_toTopOf="@+id/btn_jarsetting_menu"
+        app:layout_constraintVertical_bias="0.557" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_jarsetting_menu"
+        app:layout_constraintEnd_toEndOf="@+id/btn_jarsetting_menu"
+        app:layout_constraintTop_toTopOf="@+id/btn_jarsetting_menu"
+        app:layout_constraintVertical_bias="0.581"
+        app:srcCompat="@drawable/ic_muiten_right" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_terminalexchange_menu"
+        app:layout_constraintEnd_toEndOf="@+id/btn_terminalexchange_menu"
+        app:layout_constraintTop_toTopOf="@+id/btn_terminalexchange_menu"
+        app:srcCompat="@drawable/ic_muiten_right" />
+
+</android.support.constraint.ConstraintLayout>
