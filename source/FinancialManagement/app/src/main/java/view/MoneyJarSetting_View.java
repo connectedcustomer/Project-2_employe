@@ -1,4 +1,4 @@
 package view;
 
-public class MoneyJarSetting_View {
+public class  MoneyJarSetting_View {
 }
